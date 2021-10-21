@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('https://kfcvietnam.com.vn/templates/images/kfc_vietnam_pc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.top-nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.top-nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.cart a {
+    position: fixed;
+    right: 0;
+    justify-content: space-between;
+    text-align: center;
+}
+.cart i {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px;
+    font-size: 17px;
+}
+header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: -80px;
+}
+
+.slide img {
+    width: 1000px;
+    height: 400px;
+    padding-top: 2px;
+}
+
+.left-right-section {
+    display: flex;
+    margin-top: 10px;
+}
+
+.left-right-section .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.left-right-section .image {
+    width: 50%;
+    display: flex;
+}
+
+.left-right-section .image img {
+    width: 100%;
+}
+
+.left-right-section .image:hover {
+    opacity: 0.3;
+}
+
+.text h1 {
+    margin-bottom: 24px;
+    margin: 2px;
+    font-size: bold;
+}
+
+.text .buy {
+    padding: 7px 32px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: #1e3932;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.text .buy:hover {
+    padding: 7px 30px;
+    background-color: beige;
+}
+.left-right-section .buy .add-cart {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    margin-top: 10px;
+}
+
+.list ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.navbar-menu {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #cccc;
+    justify-content: center;
+}
+
+.navbar-menu .navbar-item {
+    list-style: none;
+    margin-right: 20px;
+    padding: 3px 8px;
+}
+
+.navbar-menu .navbar-item a {
+    text-decoration: none;
+
+    font-size: 18px;
+}
+.navbar-menu .navbar-item a:hover {
+    color: #f32424;
+}
+.add-to-card {
+    padding: 6px 19px;
+    border-radius: 4px;
+    background-color: #f32424;
+    transition: all 0.25s ease-in-out;
+}
+.add-to-card a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.add-to-card:hover {
+    background-color: #f32424b0;
+}
+.list1 {
+}
+.list1 li {
+    text-decoration: none;
+}
+.login-page {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 16px;
+    height: 600px;
+    -webkit-box-shadow: 0px 11px 25px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 11px 25px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 11px 25px -12px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-page .form {
+    display: flex;
+    width: 100%;
+    padding: 15px 20px;
+}
+.form .form-signup {
+    width: 50%;
+}
+.form .form-login {
+    width: 50%;
+}
+.form .form-group {
+    margin-bottom: 18px;
+}
+.form-group label {
+    width: 140px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.button-signup {
+    padding: 5px 15px;
+    background-color: #f32424;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.form input {
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+.form input {
+    outline: none;
+    border: 1px solid rgb(187, 187, 187);
+}
+.form input:focus {
+    border: 1px solid #f32424;
+}
+.button-login {
+    padding: 5px 15px;
+    background-color: #9c9c9c;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid #f32424;
+}
+.active a {
+    color: #f32424;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f324246b;
+    color: white;
+   
+ 
+}
+
+.container {
+    padding: 0 16px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: rgb(230, 34, 34);
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: rgb(255, 17, 17);
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+.column {
+    width: 415px;
+    height: auto;
+}
+.card {
+    padding: 15px;
+    height: 100%;
+    border-radius: 4px;
+}
+.card img {
+    width: 400px;
+    height: 350px;
+}
+
+.leftcolumn {
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card-new {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 11px 25px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 25px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 25px -12px rgba(0,0,0,0.75);
+}
+
+/* Clear floats after the columns */
+.row-2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.fakeimg {
+    background-image: url("https://cafefcdn.com/203337114487263232/2021/10/19/photo-1-16346358741151779944517.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+}
+.fakeimg1 {
+    width: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/5/20/gettyimages-967394660-1621497178600627267275.jpg");
+}
+.card-new {
+    width: 400px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.titlecard:hover {
+    color: #f32424;
+}
+.fakeimg2{
+    width: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://kfcvietnam.com.vn/uploads/banner/bb8e434961ce7ce3fca01f834974f9c6.png");
+}

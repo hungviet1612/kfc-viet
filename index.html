@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="food.css">
     <link rel="stylesheet" href="main.css">
 
@@ -12,6 +13,10 @@
 </head>
 
 <body>
+    <div class="alert" style='display:none'>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Thêm thành công
+    </div>
     <nav>
         <ul class="navbar-menu">
             <li class="navbar-item active">
@@ -82,6 +87,7 @@
                     </div>
                 </section>
         </header>
+
         <footer>
             <div class="list">
                 <ul>
@@ -92,6 +98,31 @@
             </div>
             <p class="copyright">Company Name © 2021</p>
         </footer>
+
+        <script>
+            // Get all elements with class="closebtn"
+            var close = document.getElementsByClassName("closebtn");
+            var i;
+            document.querySelector('.add-to-card').addEventListener('click', () => {
+                document.querySelector('.alert').style.display = 'block';
+            })
+            // Loop through all close buttons
+            for (i = 0; i < close.length; i++) {
+                // When someone clicks on a close button
+                close[i].onclick = function () {
+
+                    // Get the parent of <span class="closebtn"> (<div class="alert">)
+                    var div = this.parentElement;
+
+                    // Set the opacity of div to 0 (transparent)
+                    div.style.opacity = "0";
+
+                    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+                    setTimeout(function () { div.style.display = "none"; }, 600);
+                }
+            }
+        </script>
+
 </body>
 
 </html>
